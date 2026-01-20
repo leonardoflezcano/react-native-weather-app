@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .news-link {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto del contenedor */
+  }
+  
+  .news-link:hover {
+    text-decoration: none; /* Asegúrate de que no haya subrayado en hover */
+  }
+  
+  .news-widget {
+    background: linear-gradient(to bottom right, #000000);
+    padding: 2rem;
+    border-radius: 0rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .news-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .news-card {
+    background-color: #f3e5f5; /* Fondo rosa suave */
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #d1c4e9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Asegura que la tarjeta crezca con su contenido */
+  }
+  
+  .news-card:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  }
+  
+  .news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .news-content {
+    padding: 1rem;
+    /* El fondo rosa ahora está en .news-card */
+  }
+  
+  .news-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4a148c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .news-description {
+    color: #424242;
+    font-size: 0.875rem;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #f3e5f5;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a148c;
+  }
+  
+  .modal-body {
+    padding: 1rem 0;
+  }
+  
+  .modal-close {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #1e88e5;
+    color: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .modal-close:hover {
+    background-color: #1565c0;
+  }
